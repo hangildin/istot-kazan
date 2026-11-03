@@ -158,3 +158,8 @@ a,button,summary{touch-action:manipulation}
  .card-facts{font-size:13px}
  .footer-links a{min-height:36px;display:inline-flex;align-items:center}
 }
+
+/* VERSION 4: larger contact targets and safer mobile footer interaction */
+.header-phone,.contact-social,.contact-map{min-height:44px;display:inline-flex;align-items:center}
+.footer-links a{min-height:40px;display:inline-flex;align-items:center}
+@media(max-width:680px){.footer-links a{min-height:44px}.contact-social,.contact-map{font-size:14px}}
