@@ -15,7 +15,7 @@ raw=sys.argv[1].rstrip('/')
 p=urlparse(raw)
 if p.scheme!='https' or not p.netloc or p.query or p.fragment or '..' in p.path:
     raise SystemExit('Use a verified HTTPS site URL, with no query or fragment')
-files=sorted(ROOT.glob('**/index.html'))
+files=sorted(f for f in ROOT.glob('**/index.html') if '_site' not in f.relative_to(ROOT).parts)
 urls=[]
 for f in files:
     path=f.parent.relative_to(ROOT).as_posix()
