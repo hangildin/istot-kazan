@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Sitemap and canonical URLs are added after the final domain is known.
