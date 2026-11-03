@@ -148,3 +148,13 @@ a,button,summary{touch-action:manipulation}
  .header-book{padding:8px 10px;font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* VERSION 4: legibility and keyboard navigation without changing the approved visual identity */
+:where(a,button,summary):focus-visible{outline:3px solid #d7ae7d;outline-offset:4px}
+.program-card .card-desc{font-size:15px;line-height:1.7}
+.card-facts{font-size:13px;line-height:1.55}
+@media(max-width:680px){
+ .program-card .card-desc{font-size:15px;line-height:1.65}
+ .card-facts{font-size:13px}
+ .footer-links a{min-height:36px;display:inline-flex;align-items:center}
+}
