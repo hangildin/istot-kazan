@@ -42,6 +42,21 @@
     gallery.addEventListener('click', e => {if (e.target === gallery) gallery.close();});
     gallery.addEventListener('close', () => {photo.removeAttribute('src');});
   }
+  // Measurement-ready contact clicks. These are intent signals, not confirmed enquiries.
+  document.addEventListener('click', e => {
+    const link = e.target.closest?.('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href') || '';
+    const channel = href.startsWith('tel:') ? 'phone' : href.includes('instagram.com/istotkazan') ? 'instagram' : '';
+    if (!channel) return;
+    const detail = { channel, page: window.location.pathname, label: link.textContent.trim().slice(0, 80) };
+    document.dispatchEvent(new CustomEvent('istot:contact-click', { detail }));
+    if (Array.isArray(window.dataLayer)) window.dataLayer.push({ event: 'istot_contact_click', ...detail });
+    const counterId = window.ISTOT_METRIKA_ID;
+    if (typeof window.ym === 'function' && Number.isInteger(counterId)) {
+      window.ym(counterId, 'reachGoal', 'contact_click_' + channel);
+    }
+  });
   const y = document.getElementById('current-year');
   if (y) y.textContent = String(new Date().getFullYear());
 })();
