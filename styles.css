@@ -201,3 +201,7 @@ a,button,summary{touch-action:manipulation}
   .compare-links a{font-size:13px}
   .trust-layout h2{font-size:40px}
 }
+
+/* Final compact mobile hero for first-screen service clarity */
+@media(max-width:680px){.hero h1{font-size:clamp(46px,11.5vw,67px);line-height:1.03}.hero-left .eyebrow{margin-bottom:18px}.hero-description{margin-top:12px}.hero-buttons{margin-top:23px}}
+@media(max-width:355px){.hero h1{font-size:45px}}
