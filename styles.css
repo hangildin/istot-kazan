@@ -163,3 +163,41 @@ a,button,summary{touch-action:manipulation}
 .header-phone,.contact-social,.contact-map{min-height:44px;display:inline-flex;align-items:center}
 .footer-links a{min-height:40px;display:inline-flex;align-items:center}
 @media(max-width:680px){.footer-links a{min-height:44px}.contact-social,.contact-map{font-size:14px}}
+
+/* SEARCH AND TRUST IMPROVEMENTS 2026-11: retain the original visual system */
+.trust-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,100px);align-items:start}
+.trust-layout h2{font-family:var(--serif);font-size:clamp(45px,5.2vw,75px);font-weight:600;line-height:1.05;letter-spacing:-.03em;margin:0 0 22px}
+.trust-layout h2 em{color:var(--copper);font-weight:500}
+.trust-intro{font-size:clamp(15px,1.5vw,19px);line-height:1.8;max-width:540px;color:#3b453c}
+.trust-details>div{border-top:1px solid #c6bdb0;padding:20px 0 18px}
+.trust-details strong{font:600 27px/1.15 var(--serif);color:#27382e}
+.trust-details p{font-size:15px;line-height:1.75;color:#515850;margin:7px 0 0}
+.trust-details a{text-decoration:underline;text-underline-offset:4px;color:#71512e}
+.compare-section{padding-top:32px}
+.compare-panel{border-top:1px solid #c6bdb0;border-bottom:1px solid #c6bdb0;padding:38px 0}
+.compare-panel h2{font:600 clamp(34px,4.2vw,54px)/1.1 var(--serif);max-width:850px;margin:0 0 18px}
+.compare-panel>p:not(.eyebrow){font-size:15px;line-height:1.8;color:#515850;max-width:800px}
+.compare-links{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:25px}
+.compare-links a{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 17px;border:1px solid #a99c89;min-height:48px;max-width:100%;font-size:13px;line-height:1.45;transition:background .2s}
+.compare-links a:hover{background:#e4dace}
+@media(max-width:900px){.trust-layout{grid-template-columns:1fr;gap:21px}}
+@media(max-width:680px){
+  .trust-layout h2{font-size:clamp(42px,10vw,62px);overflow-wrap:break-word}
+  .trust-intro,.trust-details p,.compare-panel>p:not(.eyebrow){font-size:15px;line-height:1.72}
+  .trust-details strong{font-size:26px}
+  .compare-panel{padding:29px 0}
+  .compare-panel h2{font-size:clamp(34px,9vw,49px)}
+  .compare-links{flex-direction:column}
+  .compare-links a{width:100%;font-size:14px}
+  .faq-stack summary{min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:15px}
+  .nav a{min-height:46px;display:flex;align-items:center;font-size:14px}
+  .hero-description,.detail-deck,.detail-paragraph p{font-size:15px;line-height:1.7}
+  .hero-buttons a,.detail-buttons a{min-height:48px;font-size:12px}
+  .contact-card address,.contact-description{font-size:14px;line-height:1.7}
+  .footer-links a{font-size:13px;min-height:42px}
+  .mobile-bar{padding-bottom:env(safe-area-inset-bottom,0px)}
+}
+@media(max-width:355px){
+  .compare-links a{font-size:13px}
+  .trust-layout h2{font-size:40px}
+}
