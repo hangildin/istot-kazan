@@ -16,7 +16,7 @@
     }));
     document.addEventListener('click', e => {
       if (nav.classList.contains('open') && !nav.contains(e.target) && !menu.contains(e.target)) {
-        nav.classList.remove('open'); menu.setAttribute('aria-expanded','false'); menu.setAttribute('aria-label','Открыть меню'); menu.setAttribute('aria-label','Открыть меню');
+        nav.classList.remove('open'); menu.setAttribute('aria-expanded','false'); menu.setAttribute('aria-label','Открыть меню');
       }
     });
     document.addEventListener('keydown', e => {
