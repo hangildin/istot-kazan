@@ -293,3 +293,17 @@ a,button,summary{touch-action:manipulation}
  .club-quote{font-size:30px}
  .editorial-cta h2{font-size:40px}
 }
+
+/* Agreed service rules: precise, readable, no decorative badges */
+.format-rules{background:#e9e3d8}
+.format-rules-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:start}
+.format-rules h2{font-size:clamp(43px,5vw,72px);line-height:1.03}
+.format-rules h2 em{color:#976f4b}
+.format-rules p:not(.eyebrow){max-width:560px;line-height:1.85;color:#4e574d}
+.format-rules-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 21px}
+.format-rules-facts div{border-top:1px solid #c8bcad;padding:22px 0;min-width:0}
+.format-rules-facts strong{display:block;font:600 29px/1.15 var(--serif);margin-bottom:10px;color:#293c31}
+.format-rules-facts span{display:block;font-size:13px;line-height:1.7;color:#4e574d}
+@media(max-width:900px){.format-rules-grid{grid-template-columns:1fr;gap:17px}}
+@media(max-width:680px){.format-rules h2{font-size:clamp(40px,10.5vw,60px)}.format-rules-facts{gap:0 14px}.format-rules-facts strong{font-size:25px}.format-rules-facts span{font-size:12px}}
+@media(max-width:355px){.format-rules-facts{grid-template-columns:1fr}}
