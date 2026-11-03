@@ -307,3 +307,81 @@ a,button,summary{touch-action:manipulation}
 @media(max-width:900px){.format-rules-grid{grid-template-columns:1fr;gap:17px}}
 @media(max-width:680px){.format-rules h2{font-size:clamp(40px,10.5vw,60px)}.format-rules-facts{gap:0 14px}.format-rules-facts strong{font-size:25px}.format-rules-facts span{font-size:12px}}
 @media(max-width:355px){.format-rules-facts{grid-template-columns:1fr}}
+
+/* ISTOT SHORT HOME PAGE: four focused sections, everything else on inner pages */
+.home-hero .hero-layout{min-height:550px;gap:clamp(25px,4vw,65px);padding-top:34px;padding-bottom:34px}
+.home-hero .hero-left{padding:8px 0}
+.home-hero .hero-left .eyebrow{margin-bottom:25px}
+.home-hero .hero h1,.home-hero h1{font-size:clamp(61px,6.3vw,96px);margin-bottom:22px}
+.home-hero .hero-description{max-width:410px;font-size:16px;line-height:1.7;margin:0 0 18px}
+.home-hero .hero-visual-photo{height:490px}
+.home-hero .hero-buttons{margin-top:24px}
+.home-philosophy{font:500 23px/1.25 var(--serif);color:#d3b38e;max-width:390px;margin-bottom:0}
+.home-phone-link{display:inline-block;margin-top:18px;font-size:15px;font-weight:650;color:#efe0ca;letter-spacing:.03em;border-bottom:1px solid #977b5a;padding-bottom:5px}
+.home-phone-link:hover{color:var(--gold)}
+.home-programs{padding:70px 0 65px}
+.home-programs .section-head-row{margin-bottom:32px}
+.home-programs .section-heading h2{margin:0}
+.home-programs .program-photo{height:178px}
+.home-programs .program-card-body{padding:18px 18px 16px}
+.home-programs .program-card h3{font-size:29px;margin-bottom:10px;min-height:0}
+.home-programs .program-card .card-desc{font-size:13px;line-height:1.6;min-height:0;margin-bottom:12px}
+.home-programs .program-card .card-facts{font-size:11px}
+.home-programs .program-card .overline{margin-bottom:5px}
+.home-programs .program-card .card-bottom{margin-top:auto}
+.home-programs .program-info{margin-top:18px}
+.home-gallery{padding:65px 0;background:#eee8dd}
+.home-section-intro{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}
+.home-section-intro .eyebrow{margin-bottom:15px}
+.home-section-intro h2{font-size:clamp(44px,5.3vw,70px);margin-bottom:0}
+.home-photo-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:11px;height:280px}
+.home-photo-grid .gallery-photo{display:block;min-width:0;min-height:0}
+.home-photo-grid img{width:100%;height:100%;object-fit:cover}
+.home-contact{padding:70px 0}
+.home-contact .contact-layout{gap:clamp(24px,4vw,64px)}
+.home-contact .contact-layout h2{font-size:clamp(44px,5vw,70px);margin-bottom:18px}
+.home-contact .contact-description{font-size:15px;line-height:1.65}
+.home-contact .contact-card{padding:26px 30px}
+.home-contact .contact-card-rule{margin:19px 0}
+@media(max-width:1180px){.home-programs .program-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){
+.home-hero .hero-layout{min-height:500px;gap:28px}
+.home-hero .hero-visual-photo{height:440px}
+.home-hero h1{font-size:clamp(54px,7vw,78px)}
+.home-programs .program-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:680px){
+.home-hero .hero-layout{min-height:unset;gap:23px;padding-top:27px;padding-bottom:28px}
+.home-hero .hero-left .eyebrow{font-size:10px;margin-bottom:16px}
+.home-hero h1{font-size:clamp(46px,11.3vw,65px);line-height:1.02;margin-bottom:15px}
+.home-hero .hero-description{font-size:15px;line-height:1.55;margin-bottom:13px}
+.home-philosophy{font-size:20px;line-height:1.24}
+.home-hero .hero-buttons{margin-top:19px;gap:9px}
+.home-hero .hero-buttons a{flex:1;min-width:130px;font-size:13px;min-height:48px}
+.home-phone-link{font-size:16px;margin-top:15px}
+.home-hero .hero-visual-photo{height:228px}
+.home-programs{padding:50px 0}
+.home-programs .section-head-row{gap:12px;margin-bottom:22px}
+.home-programs .section-heading h2{font-size:clamp(43px,10.5vw,61px)}
+.home-programs .program-grid{grid-template-columns:1fr;gap:13px}
+.home-programs .program-photo{height:158px}
+.home-programs .program-card-body{padding:16px 17px}
+.home-programs .program-card h3{font-size:32px;margin-bottom:8px}
+.home-programs .program-card .card-desc{font-size:14px;line-height:1.55;margin-bottom:10px}
+.home-programs .program-card .card-facts{font-size:12px}
+.home-programs .program-card .card-bottom{padding-top:9px}
+.home-programs .program-info{font-size:12px;line-height:1.65}
+.home-gallery{padding:49px 0}
+.home-section-intro{align-items:start;gap:15px;margin-bottom:22px}
+.home-section-intro h2{font-size:clamp(39px,9.5vw,51px)}
+.home-section-intro .text-link{font-size:12px;flex-shrink:0;max-width:102px;text-align:right}
+.home-photo-grid{grid-template-columns:1fr 1fr;height:auto;grid-auto-rows:150px;gap:8px}
+.home-photo-grid .gallery-photo:first-child{grid-column:1/-1;height:185px}
+.home-contact{padding:52px 0}
+.home-contact .contact-layout{gap:25px}
+.home-contact .contact-layout h2{font-size:clamp(43px,10.5vw,60px)}
+.home-contact .contact-card{padding:22px 20px}
+.home-contact .contact-description{font-size:14px}
+.home-contact .contact-number{font-size:clamp(26px,8vw,38px);overflow-wrap:anywhere}
+}
+@media(max-width:355px){.home-hero .hero-buttons{flex-direction:column}.home-hero .hero-buttons a{min-width:0;width:100%}.home-programs .program-card h3{font-size:29px}.home-photo-grid{grid-auto-rows:125px}.home-photo-grid .gallery-photo:first-child{height:165px}}
