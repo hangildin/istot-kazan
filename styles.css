@@ -205,3 +205,91 @@ a,button,summary{touch-action:manipulation}
 /* Final compact mobile hero for first-screen service clarity */
 @media(max-width:680px){.hero h1{font-size:clamp(46px,11.5vw,67px);line-height:1.03}.hero-left .eyebrow{margin-bottom:18px}.hero-description{margin-top:12px}.hero-buttons{margin-top:23px}}
 @media(max-width:355px){.hero h1{font-size:45px}}
+
+/* ISTOT STORY / TECHNOLOGY EXTENSION 2026-11-03
+   Uses the agreed serif, Manrope, palette, actual photos and no speculative imagery. */
+.tech-preview{background:var(--paper2)}
+.tech-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:38px}
+.tech-cards article{padding:30px 28px 26px;border:1px solid #c9bfaf;background:rgba(255,255,255,.3);min-width:0}
+.tech-cards span{display:block;font:750 10px/1.5 var(--sans);color:#785e42;letter-spacing:.17em;margin-bottom:22px}
+.tech-cards h3{font-size:clamp(30px,3vw,44px);line-height:1.05;max-width:100%;margin-bottom:15px}
+.tech-cards p{color:#4a544b;font-size:14px;line-height:1.8;margin:0}
+.tech-foot{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px 30px}
+.tech-foot a,.journal-paths a,.editorial-copy a:not(.btn){color:#72543b;text-underline-offset:5px;text-decoration:underline;font-weight:650}
+.club-preview{background:#e6dfd2}
+.club-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);align-items:center;gap:75px}
+.club-layout h2{font-size:clamp(43px,5.3vw,75px);line-height:1.04}
+.club-layout h2 em{color:#956b49}
+.club-layout p:not(.eyebrow){max-width:650px;line-height:1.85;color:#4a5048}
+.club-quote{border-left:2px solid var(--copper);padding:22px 15px 22px 36px;font:500 clamp(30px,3.2vw,48px)/1.18 var(--serif);color:#574334}
+.detail-editorial .container>p:last-child{max-width:900px}
+.detail-editorial-grid{display:grid;grid-template-columns:minmax(0, .75fr) minmax(0,1.25fr);align-items:start;gap:clamp(28px,5vw,72px)}
+.editorial-photo{position:sticky;top:118px;max-width:100%;overflow:hidden}
+.editorial-photo img{width:100%;height:auto;max-height:680px;object-fit:cover;border:1px solid #d6cdc2}
+.editorial-copy{max-width:100%;min-width:0}
+.editorial-copy h2{font-size:clamp(34px,3.4vw,52px);line-height:1.13;margin:15px 0 13px}
+.editorial-copy p{font-size:15px;line-height:1.88;color:#495248}
+.editorial-copy h2:not(:first-child){padding-top:25px;border-top:1px solid #d4cbbb;margin-top:33px}
+.editorial-copy .editorial-note{padding:20px 23px;background:#e6ded1;border-left:3px solid var(--copper);font-size:14px}
+.final-cta{padding:70px 0}
+.editorial-cta{display:flex;align-items:center;justify-content:space-between;gap:38px}
+.editorial-cta h2{font-size:clamp(40px,5.1vw,72px);line-height:1.03;color:#f2e9dc;margin-bottom:20px}
+.editorial-cta h2 em{color:#d2ac80}
+.editorial-cta p:not(.eyebrow){color:#cac8bd;line-height:1.75}
+.editorial-cta-actions{display:flex;flex-direction:column;gap:12px;min-width:215px}
+.article-grid .article-card{min-width:0}
+.article-info h3{overflow-wrap:break-word}
+.program-proof{padding:24px 28px;margin-bottom:32px;background:#e7dfd3;border-left:3px solid var(--copper)}
+.program-proof>p:not(.eyebrow){color:#475347;font-size:14px;line-height:1.8;margin-bottom:12px}
+.program-proof .compare-links{margin-top:17px}
+.program-proof .compare-links a{font-size:13px;min-height:42px;padding:10px 12px}
+.journal-paths{padding-top:15px}
+.journal-paths h2{font-size:clamp(38px,4vw,50px)}
+.journal-paths p{line-height:2}
+@media(max-width:1100px) and (min-width:901px){
+ .nav{gap:10px}
+ .nav a{font-size:10px}
+ .site-header .header-row{gap:12px}
+ .header-actions{gap:10px}
+ .header-book{padding:10px 11px}
+}
+@media(max-width:900px){
+ .tech-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .tech-cards article:last-child{grid-column:1/-1}
+ .club-layout,.detail-editorial-grid{grid-template-columns:1fr;gap:28px}
+ .editorial-photo{position:static}
+ .editorial-photo img{max-height:440px;object-fit:cover;object-position:center 45%}
+ .editorial-cta{align-items:flex-start}
+}
+@media(max-width:680px){
+ .tech-cards{grid-template-columns:1fr;gap:12px;margin-top:26px}
+ .tech-cards article:last-child{grid-column:auto}
+ .tech-cards article{padding:24px 22px}
+ .tech-cards h3{font-size:37px}
+ .tech-cards p{font-size:14px}
+ .tech-foot{flex-direction:column;align-items:flex-start;gap:14px}
+ .club-layout{gap:27px}
+ .club-layout h2{font-size:clamp(41px,11vw,58px)}
+ .club-layout p:not(.eyebrow){font-size:15px}
+ .club-quote{font-size:34px;padding-left:23px}
+ .detail-editorial-grid{gap:26px}
+ .detail-editorial .subhero h1,.detail-editorial h1{font-size:clamp(48px,12vw,72px);line-height:1;overflow-wrap:break-word}
+ .editorial-photo img{max-height:320px}
+ .editorial-copy h2{font-size:37px}
+ .editorial-copy p{font-size:15px;line-height:1.74}
+ .editorial-copy h2:not(:first-child){padding-top:23px;margin-top:26px}
+ .editorial-copy .editorial-note{padding:17px;font-size:14px}
+ .final-cta{padding:52px 0}
+ .editorial-cta{flex-direction:column;align-items:stretch;gap:20px}
+ .editorial-cta h2{font-size:clamp(42px,11vw,62px)}
+ .editorial-cta-actions{width:100%}
+ .editorial-cta-actions .btn{width:100%;min-height:48px}
+ .program-proof{padding:19px 16px;margin-bottom:21px}
+ .program-proof p{font-size:14px}
+ .journal-paths p a{display:inline-block;min-height:38px}
+}
+@media(max-width:355px){
+ .tech-cards h3{font-size:32px}
+ .club-quote{font-size:30px}
+ .editorial-cta h2{font-size:40px}
+}
