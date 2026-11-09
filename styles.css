@@ -395,3 +395,33 @@ a,button,summary{touch-action:manipulation}
 .cleaning-business .editorial-cta p:not(.eyebrow){font-size:15px;max-width:650px}
 @media(min-width:901px) and (max-width:1179px){.site-header .header-row{gap:12px}.nav{gap:11px}.header-actions{gap:8px}}
 @media(max-width:680px){.cleaning-hero-actions .btn{min-height:48px;width:100%;max-width:330px}.cleaning-service .editorial-photo img{max-height:280px}.cleaning-photo-caption{font-size:11px}.cleaning-business .editorial-cta p:not(.eyebrow){font-size:14px}}
+
+/* CLEANING PAGE V2 2026-11-09 — keeps Istot typography and color palette */
+.cleaning-intro h1{font-size:clamp(48px,6.5vw,85px);line-height:1.02;letter-spacing:-.018em;max-width:1080px;overflow-wrap:break-word}
+.cleaning-intro .container>p:not(.eyebrow){max-width:760px;line-height:1.75}
+.cleaning-service .editorial-copy>h2{font-size:clamp(34px,3.6vw,48px)}
+.cleaning-process{padding:0;list-style:none;counter-reset:istot-cleaning;margin:25px 0 31px}
+.cleaning-process li{counter-increment:istot-cleaning;position:relative;padding:14px 0 16px 45px;border-top:1px solid #d4cbbb;min-height:70px}
+.cleaning-process li:before{content:counter(istot-cleaning,decimal-leading-zero);position:absolute;left:0;top:20px;color:#916c45;font-size:11px;font-weight:700;letter-spacing:.08em}
+.cleaning-process li strong{display:block;font-size:15px;line-height:1.5;color:var(--ink)}
+.cleaning-process li span{display:block;font-size:14px;line-height:1.7;color:#515b53}
+.cleaning-contact-details{min-width:275px;border-left:1px solid rgba(235,213,177,.45);padding-left:30px;align-self:center}
+.cleaning-contact-details h3{color:#e2c39a;font:500 34px/1.15 var(--serif);margin:0 0 14px}
+.cleaning-contact-number{display:inline-block;font-size:clamp(19px,2vw,26px);font-weight:700;color:#f6ebdf;line-height:1.5;min-height:44px;border-bottom:1px solid #ac875d;white-space:nowrap}
+.cleaning-contact-details p{max-width:280px;color:#cac8bd;font-size:13px;line-height:1.75;margin-top:18px}
+.cleaning-business .editorial-cta>div:first-child{min-width:0}
+@media(max-width:900px){
+.cleaning-intro h1{font-size:clamp(47px,7.5vw,68px)}
+.cleaning-business .editorial-cta{flex-direction:column;align-items:stretch;gap:26px}
+.cleaning-contact-details{border-left:0;border-top:1px solid rgba(235,213,177,.45);padding:23px 0 0;min-width:0}
+}
+@media(max-width:680px){
+.cleaning-intro h1{font-size:clamp(39px,9.1vw,56px);line-height:1.05}
+.cleaning-intro .container>p:not(.eyebrow){font-size:15px;line-height:1.65}
+.cleaning-service .editorial-copy>h2{font-size:clamp(32px,8vw,41px)}
+.cleaning-process li{padding-left:38px}
+.cleaning-contact-details h3{font-size:30px}
+.cleaning-contact-number{font-size:22px}
+.cleaning-business .editorial-cta h2{font-size:clamp(38px,10vw,55px)}
+}
+@media(max-width:360px){.cleaning-intro h1{font-size:36px}.cleaning-contact-number{font-size:20px}}
