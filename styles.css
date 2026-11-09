@@ -385,3 +385,13 @@ a,button,summary{touch-action:manipulation}
 .home-contact .contact-number{font-size:clamp(26px,8vw,38px);overflow-wrap:anywhere}
 }
 @media(max-width:355px){.home-hero .hero-buttons{flex-direction:column}.home-hero .hero-buttons a{min-width:0;width:100%}.home-programs .program-card h3{font-size:29px}.home-photo-grid{grid-auto-rows:125px}.home-photo-grid .gallery-photo:first-child{height:165px}}
+
+/* Professional cleaning for bath buildings, in existing Istot visual language */
+.cleaning-intro .container>p:last-of-type{max-width:800px}
+.cleaning-hero-actions{margin-top:25px}
+.cleaning-service .editorial-copy h2:first-child{margin-top:0}
+.cleaning-photo-caption{font-size:11px;line-height:1.7;color:#69685f;margin:12px 0 0}
+.cleaning-business .editorial-cta{align-items:center}
+.cleaning-business .editorial-cta p:not(.eyebrow){font-size:15px;max-width:650px}
+@media(min-width:901px) and (max-width:1179px){.site-header .header-row{gap:12px}.nav{gap:11px}.header-actions{gap:8px}}
+@media(max-width:680px){.cleaning-hero-actions .btn{min-height:48px;width:100%;max-width:330px}.cleaning-service .editorial-photo img{max-height:280px}.cleaning-photo-caption{font-size:11px}.cleaning-business .editorial-cta p:not(.eyebrow){font-size:14px}}
